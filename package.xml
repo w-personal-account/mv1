@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>lsc_ros_driver</name>
+  <version>1.0.3</version>
+  <description>ROS driver package for LSC-C Series</description>
+  <author email="lidar-ros@autonics.com">Autonics-lidar</author>
+  <maintainer email="lidar-ros@autonics.com">Autonics-lidar</maintainer>
+  <license>BSD</license>
+  <url type="website">https://wiki.ros.org/lsc_ros_driver</url>
+  <url type="repository">https://github.com/AutonicsLiDAR/lsc_ros_driver</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>diagnostic_updater</build_depend>
+  <build_depend>self_test</build_depend>
+
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+</package>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="lsc_laser_publisher" pkg="lsc_ros_driver" type="lsc_laser_publisher" output="screen" respawn="false">
+        <param name="addr" type="string" value="192.168.0.1"/>
+        <param name="port" type="string" value="8000"/>
+        <param name="frame_id" type="string" value="laser"/>
+        <param name="range_min" type="double" value="0.05"/>
+        <param name="range_max" type="double" value="25.0"/>
+        <param name="password" type="string" value="0000"/>
+        <param name="topic_name" type="string" value="scan"/>
+
+        <param name="ip_change" type="bool" value="1"/>
+        <param name="prev_addr" type="string" value="192.168.0.100"/>
+        <param name="new_addr" type="string" value="192.168.0.1"/>
+
+        <param name="angle_min" type="double" value="10.0"/>
+        <param name="angle_max" type="double" value="11.0"/>
+        <param name="angle_offset" type="double" value="-90.0"/>
+    </node>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find lsc_ros_driver)/rviz/lsc_rviz.rviz"/>
+
+</launch>
+
+
+
